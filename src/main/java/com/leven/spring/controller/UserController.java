@@ -23,6 +23,7 @@ public class UserController {
     String getUserById(@PathVariable("userid") Integer id){
         User user = userService.getUserById(id);
         System.out.println(user);
+        return "";
     }
 
     @GetMapping("/userbyname/{name}")
