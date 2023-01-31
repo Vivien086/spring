@@ -23,13 +23,11 @@ public class UserController {
     String getUserById(@PathVariable("userid") Integer id){
         User user = userService.getUserById(id);
         System.out.println(user);
-        return "请求Id 是:" + id;
     }
 
     @GetMapping("/userbyname/{name}")
     String getUserByName(@PathVariable("name") String name){
         User user = userService.getUserByName(name);
-        System.out.println(user);
         return "请求name 是:" + name;
     }
 
