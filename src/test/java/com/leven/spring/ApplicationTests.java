@@ -28,6 +28,7 @@ class ApplicationTests {
         user.setUsername("李四");
         user.setPassword("456");
         userService.insertUser(user);
+
     }
 
     @Test
